@@ -1,4 +1,4 @@
-package FoodlandCard.models;
+package shop.models;
 
 public class MemberCard {
     private String name;

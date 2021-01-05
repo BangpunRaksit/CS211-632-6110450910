@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="1024" prefWidth="1280" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FoodlandCard.controllers.MemberCardDetailController">
+<AnchorPane prefHeight="1024" prefWidth="1280" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shop.controllers.MemberCardDetailController">
    <children>
       <Label layoutX="506.0" layoutY="60.0" text="Member Card Detail">
          <font>
@@ -86,5 +85,9 @@
       </Label>
       <Button layoutX="366.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleAddPurchaseButton" text="เพิ่มยอดซื้อ" />
       <Button layoutX="363.0" layoutY="621.0" mnemonicParsing="false" onAction="#handleUsePointButton" text="ใช้คะแนน" />
+      <Button layoutX="565.0" layoutY="738.0" mnemonicParsing="false" onAction="#handleUseBackButton" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
    </children>
 </AnchorPane>

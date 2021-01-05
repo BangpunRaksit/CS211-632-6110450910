@@ -1,10 +1,13 @@
-package FoodlandCard.controllers;
+package shop.controllers;
 
+import com.github.saacsos.FXRouter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import FoodlandCard.models.MemberCard;
+import shop.models.MemberCard;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class MemberCardDetailController {
     @FXML private Label nameLabel;
@@ -19,8 +22,9 @@ public class MemberCardDetailController {
     @FXML
     public void initialize() {
         System.out.println("initialize MemberCardDetailController");
-        memberCard = new MemberCard("Raksit Phoopongpattana", "084-559-2270");
+        memberCard = (MemberCard) FXRouter.getData();
         showMemberCardData();
+
     }
     @FXML
     public void handleAddPurchaseButton(ActionEvent actionEvent) {
@@ -50,6 +54,18 @@ public class MemberCardDetailController {
         String point = "" + memberCard.getStamp();
         pointLabel.setText(point);
     }
+
+    @FXML
+    public void handleUseBackButton(ActionEvent actionEvent) {
+        try {
+            FXRouter.goTo("home");
+        } catch (IOException e) {
+            System.err.println("ไปที่หน้า home ไม่ได้");
+            System.err.println("ให้ตรวจสอบการกำหนด route");
+        }
+
+    }
+
 }
 
 

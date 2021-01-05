@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>FoodlandCard</groupId>
-    <artifactId>lab04</artifactId>
+    <groupId>shop</groupId>
+    <artifactId>lab05</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -15,8 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <out.folder>6110450910</out.folder>
         <out.filename>6110450910-jar</out.filename>
-        <project.mainClass>FoodlandCard.Main</project.mainClass>
-
+        <project.mainClass>shop.Main</project.mainClass>
     </properties>
 
     <build>
